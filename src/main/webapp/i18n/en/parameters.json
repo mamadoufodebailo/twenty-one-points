@@ -1,0 +1,24 @@
+{
+  "twentyOnePointsApp": {
+    "parameters": {
+      "home": {
+        "title": "Parameters",
+        "createLabel": "Create a new Parameters",
+        "createOrEditLabel": "Create or edit a Parameters",
+        "notFound": "No Parameters found"
+      },
+      "created": "A new Parameters is created with identifier {{ param }}",
+      "updated": "A Parameters is updated with identifier {{ param }}",
+      "deleted": "A Parameters is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Parameters {{ id }}?"
+      },
+      "detail": {
+        "title": "Parameters"
+      },
+      "weeklyGoal": "Weekly Goal",
+      "weight": "Weight",
+      "parameter": "Parameter"
+    }
+  }
+}
