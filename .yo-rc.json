@@ -1,0 +1,45 @@
+{
+  "generator-jhipster": {
+    "applicationType": "monolith",
+    "gitCompany": "",
+    "baseName": "twentyOnePoints",
+    "packageName": "fd.group.app",
+    "packageFolder": "fd/group/app",
+    "serverPort": 8080,
+    "serviceDiscoveryType": false,
+    "authenticationType": "jwt",
+    "uaaBaseName": "../uaa",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": false,
+    "enableSwaggerCodegen": false,
+    "messageBroker": false,
+    "buildTool": "maven",
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "testFrameworks": [
+      "protractor"
+    ],
+    "enableTranslation": true,
+    "nativeLanguage": "en",
+    "languages": [
+      "fr",
+      "en"
+    ],
+    "clientFramework": "angularX",
+    "jhiPrefix": "jhi",
+    "jhipsterVersion": "6.1.2",
+    "jwtSecretKey": "N2Y5OWFlYjg1N2FhZTE5YTE0MTQyYmU5MzViN2YwNmRjMjg4NzAzM2I0ZmJhYzY5NjNjZTZkNzQyNWU3ZTA4ZDk0ZmMzNGE5ODdkMDAzNGQwNGIzOWRjNDAyOGRmYmNlMWVlMDc0M2M1ZDg3ZGE3ZGNhMzc1ZjdlMjczOTg3YTU=",
+    "clientTheme": "none",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": []
+  },
+  "git-provider": "GitHub",
+  "git-company": "mamadoufodebailo",
+  "repository-name": "twenty-one-points"
+}
