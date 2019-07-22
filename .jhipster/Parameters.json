@@ -1,0 +1,33 @@
+{
+    "name": "Parameters",
+    "fields": [
+        {
+            "fieldName": "weeklyGoal",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "weight",
+            "fieldType": "Units",
+            "fieldValues": "KG,LB"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "otherEntityName": "user",
+            "otherEntityRelationshipName": "parameters",
+            "relationshipName": "parameter",
+            "otherEntityField": "id",
+            "ownerSide": true
+        }
+    ],
+    "changelogDate": "20190722193723",
+    "entityTableName": "parameters",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

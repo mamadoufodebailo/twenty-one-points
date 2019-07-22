@@ -1,0 +1,36 @@
+{
+    "name": "BloodPressure",
+    "fields": [
+        {
+            "fieldName": "date",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "systolic",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "diastolic",
+            "fieldType": "Integer"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "user",
+            "otherEntityRelationshipName": "bloodPressure",
+            "relationshipName": "user",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20190722193722",
+    "javadoc": "not an ignored comment",
+    "entityTableName": "blood_pressure",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}
