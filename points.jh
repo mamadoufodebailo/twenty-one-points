@@ -1,0 +1,54 @@
+
+entity Points {
+	date LocalDate required,
+    exercise Integer,
+    meals Integer,
+    alcohol Integer,
+    notes String
+}
+
+entity Weight {
+	date ZonedDateTime,
+    weight Integer
+}
+
+// an ignored comment
+/** not an ignored comment */
+entity BloodPressure {
+	date ZonedDateTime
+	systolic Integer,
+	diastolic Integer
+}
+
+entity Parameters {
+	weeklyGoal Integer,
+    Weight Units
+}
+
+enum Units {
+KG, LB
+}
+
+relationship OneToOne {
+	Parameters{parameter} to User
+}
+
+relationship ManyToOne {
+	Points{user} to User,
+    BloodPressure{user} to User,
+    Weight{user} to User
+}
+
+// Set pagination options
+paginate Points with infinite-scroll
+paginate all with pagination except Points
+
+// Use Data Transfert Objects (DTO)
+// dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl except Points, Parameters
+service Parameters with serviceClass
+
+// Set an angular suffix
+// angularSuffix * with mySuffix
